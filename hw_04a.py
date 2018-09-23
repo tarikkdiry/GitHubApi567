@@ -1,6 +1,5 @@
 import requests
 import json
-from sys import getsizeof
 import pprint
 import os
 
@@ -14,13 +13,12 @@ def gitHubFunction(userInput):
     else:
         repoName = requests.get("https://api.github.com/users/" + userInput + "/repos")
         data = repoName.json()
-        # print(data)
         try:
             for i in data:
                 name = i["name"]
-                commits = requests.get("https://api.github.com/users/" + userInput + "/" + name + "/commits")
-                # commits_data = len(commits.json())
-                commits_data = commits.json()
+                commits = requests.get("https://api.github.com/repos/" + userInput + "/" + name + "/commits")
+                commits_data = len(commits.json())
+                # commits_data = commits.json()
                 print("Repo:" + name + " Number of commits: " + str(commits_data))
         except:
             print("================================================================")
