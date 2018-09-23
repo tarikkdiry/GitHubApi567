@@ -5,6 +5,12 @@
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 The main thing I thought about while writing this program was how to make it as readable as it can. Even before writing it so that it\'92s easy to test, I kept in mind how this will look and read once it is opened. Doing this will provide the easiest path to successful testing. \
+\f0\fs24 \cf0 GITHUB REPO LINK: https://github.com/tarikkdiry/GitHubApi567\
 \
-The only real challenges I faced were completely technical. Specifically the syntax of JSON parsing and presenting in a readable way. }
+The main thing I thought about while writing this program was how to make it as readable as it can. Even before writing it so that it\'92s easy to test, I kept in mind how this will look and read once it is opened. Doing this will provide the easiest path to successful testing. \
+\
+To make it easy to test, I wrote a few if statements and one try/except statement in order to cover all errors and edge cases, both blatant and subtle. Each error return message will provide a clear clue as to where the error lies.\
+\
+The only real challenges I faced were completely technical. Specifically the syntax of JSON parsing and presenting in a readable way. \
+\
+}

@@ -6,7 +6,9 @@ import os
 userInput = input("Username: ")
 
 def gitHubFunction(userInput):
-    if (isinstance(userInput, str) != True):
+    if (userInput == ""):
+        return "You must provide a username"
+    elif (isinstance(userInput, str) != True):
         return "The input username is not valid"
     elif((requests.get("https://api.github.com/users/" + userInput + "/repos")).json() == []):
         return "This account does not have any repositories"
