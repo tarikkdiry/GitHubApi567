@@ -18,8 +18,8 @@ class TestGitHubFunction(unittest.TestCase):
     # def testValidUserInput5(self):
     #     self.assertTrue(gitHubFunction("tarikkdiry"))
 
-    def testValidUserInput6(self):
-        self.assertFalse(gitHubFunction("asdasda"))
+    # def testValidUserInput6(self):
+    #     self.assertFalse(gitHubFunction("asdasda"))
 
 if __name__ == '__main__':
     print('Running Unit Tests')
