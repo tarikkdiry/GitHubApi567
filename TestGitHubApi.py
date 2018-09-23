@@ -15,6 +15,12 @@ class TestGitHubFunction(unittest.TestCase):
     def testValidUserInput4(self):
         self.assertEqual(gitHubFunction(""), 'You must provide a username')
 
+    def testValidUserInput5(self):
+        self.assertTrue(gitHubFunction("tarikkdiry"))
+
+    def testValidUserInput6(self):
+        self.assertFalse(gitHubFunction("asdasda"))
+
 if __name__ == '__main__':
     print('Running Unit Tests')
     unittest.main()
