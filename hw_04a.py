@@ -30,5 +30,4 @@ def gitHubFunction(userInput):
             print(os.system("curl -i https://api.github.com/users/" + userInput))
 
 
-
 # print(gitHubFunction(userInput))
