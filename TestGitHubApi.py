@@ -12,18 +12,14 @@ class TestGitHubFunction(unittest.TestCase):
     
     def testValidUserInput3(self):
         self.assertEqual(gitHubFunction("asdasdas"), 'This account does not have any repositories')
+        self.assertFalse(gitHubFunction("/.123/.123"), 'This account does not have any repositories')
 
     def testValidUserInput4(self):
         self.assertEqual(gitHubFunction(""), 'You must provide a username')
         self.assertEqual(gitHubFunction([]), 'You must provide a username')
 
     def testValidUserInput5(self):
-        self.assertTrue(gitHubFunction("tarikkdiry"))
-        self.assertTrue(gitHubFunction("richkempinski"))
-
-    def testValidUserInput6(self):
         self.assertFalse(gitHubFunction("asdasda"))
-        self.assertFalse(gitHubFunction("/.123/.123"))
 
 if __name__ == '__main__':
     print('Running Unit Tests')

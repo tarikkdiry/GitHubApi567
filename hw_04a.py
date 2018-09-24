@@ -6,7 +6,7 @@ import os
 userInput = input("Username: ")
 
 def gitHubFunction(userInput):
-    if (userInput == ""):
+    if (userInput == "" or userInput == []):
         return "You must provide a username"
     elif (isinstance(userInput, str) != True):
         return "The input username is not valid"
