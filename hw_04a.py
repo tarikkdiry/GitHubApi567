@@ -1,9 +1,10 @@
-import requests
 import json
 import pprint
 import os
+import requests
 
-userInput = input("Username: ")
+# userInput = input("Username: ")
+userInput = "tarikkdiry"
 
 def gitHubFunction(userInput):
     if (userInput == "" or userInput == []):
