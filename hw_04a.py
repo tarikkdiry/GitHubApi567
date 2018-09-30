@@ -2,7 +2,6 @@ import json
 import pprint
 import os
 import requests
-from unittest import mock
 
 # userInput = input("Username: ")
 userInput = "tarikkdiry"
