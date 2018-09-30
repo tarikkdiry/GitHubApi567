@@ -1,6 +1,6 @@
 import unittest
 from unittest import mock
-# import mock
+
 
 from hw_04a import gitHubFunction
 
@@ -22,7 +22,6 @@ class TestGitHubFunction(unittest.TestCase):
     #     self.assertEqual(gitHubFunction([]), 'You must provide a username')
 
     @mock.patch('requests.get')
-
     def mockGitHubFunction1(self, mockedReq):
         mockedReq.return_value = MockResponse('[{"commits": 1}]')
         result = gitHubFunction(self.user)
